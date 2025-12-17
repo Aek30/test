@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">แบบสอบถามความพึงพอใจ</h1>
+<p id="description">แบบฟอร์มนี้สร้างขึ้นโดยใช้เพียง HTML เท่านั้น เพื่อทดสอบโครงสร้างพื้นฐาน</p>
+<form id="survey-form">
+  <div><label id="name-label">ชื่อของคุณ:</label>
+  <input id="name" type="text" required placeholder="กรอกชื่อที่นี่"></div>
+  <div><label id="email-label">อีเมล:</label>
+  <input id="email" type="email" required placeholder="name@example.com"></div>
+  <div><label id="number-label">อายุ (ปี):</label>
+  <input id="number" type="number" min="10" max="100"  required placeholder="ระบุอายุ"></div>
+
+  <div><select id="dropdown">
+    <option value="student">นักเรียน</option>
+    <option value="job">ทำงานประจำ</option>
+    <option value="freelance">ฟรีแลนซ์</option>
+    <option value="other">อื่นๆ</option>
+  </select>
+  </div><br>
+  <div>
+    <p>คุณชอบเขียนโค้ดภาษาอะไรมากที่สุด?</p>
+      <label><input type="radio" name="language" value="html"> HTML</label><br>
+      <label><input type="radio" name="language" value="css"> CSS</label><br>
+      <label><input type="radio" name="language" value="js"> JavaScript</label>
+        </div><br>
+<div><p>งานอดิเรก (เลือกได้หลายข้อ):</p>
+  <label>
+    <input type="checkbox" value="reading">อ่านหนังสือ</label><br>
+    <label>
+    <input type="checkbox" value="gaming"> เล่นเกม </label><br>
+    <label>
+    <input type="checkbox" value="coding"> เขียนโปรแกรม</label><div><br>
+    <label for="comments">ความคิดเห็นเพิ่มเติม:</label><br>
+  <textarea id="comments" name="comment" rows="4" cols="50" placeholder="พิมพ์ข้อความที่นี่..."></textarea><br>
+    <button type="submit" id="submit">ส่งข้อมูล</button>
+</form>
+  </body>
+</html>
